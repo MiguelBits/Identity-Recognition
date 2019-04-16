@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MyFlaskApp</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap.min.css">
+    </head>
+    <body>
+        {% include 'includes/_navbar.html' %}
+        {% block body %}{% endblock %}
+        <form action="/action_page.php" method="post" target="_blank">
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            <input type="submit" value="Submit">
+          </form>
+          
+          <p>Click on the submit button, and the form will be submittied using the POST method.</p>
+
+        <script src="https://maxcdn.bootstrapcdn.com/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
